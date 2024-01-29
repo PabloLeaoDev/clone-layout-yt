@@ -97,15 +97,25 @@ main {
 
 /* section 2 */
 
+.dio {
+    width: 100%;
+}
+
 .dio .channel, .channel-avatar {
     display: flex;
     flex-direction: row;
 }
 
+.dio .channel {
+    margin: 6px 0px 0px 25px;
+}
+
 button {
     background: var(--cinza-claro);
     color: white;
-
+    width: 140px;
+    height: 35px;
+    border-radius: 30px;
     font-weight: 700;
 }
 
@@ -114,21 +124,64 @@ button img {
 }
 
 .subscribe {
-    width: 140px;
-    height: 40px;
-
+    width: 130px;
     padding: 10px;
+    margin-left: 25px;
+
+    background: white;
+    color: var(--cinza-claro);
+}
+
+div.buttons {
+    display: flex;
+
+    gap: 10px;
+
+    width: 90%;
+    margin: 6px 0px 0px 25px;
+}
+
+.thumbs {
+    background: var(--cinza-claro);
     border-radius: 30px;
+    width: 120px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 150px;
 }
 
-.subscribe img {
+.thumbs span {
     position: relative;
-    right: 6px;
-    bottom: 2px;
+    left: 6px;
+    bottom: 5px;
 }
 
-.subscribe span {
+.share {
+    width: 160px;
+}
+
+.share img {
     position: relative;
-    left: 4px;
-    bottom: 8px;
+    right: 15px;
+}
+
+.share span {
+    text-transform: capitalize;
+
+    width: 130px;
+    position: relative;
+    bottom: 5px;
+}
+
+.more {
+    width: 35px;
+    height: 35px;
+}
+
+.more span {
+    font-size: 1.2rem;
+
+    position: relative;
+    bottom: 4px;
 }
