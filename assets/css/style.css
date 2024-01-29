@@ -3,6 +3,7 @@
 :root {
     --cinza-escuro: #0F0F0F;
     --cinza-claro: #262628;
+    --cinza-claro1: #9b9b9b;
 }
 
 header {
@@ -26,6 +27,7 @@ header nav {
     align-items: center;
 
     margin: 15px 0px 0px 15px;
+    cursor: pointer;
 }
 
 .logo i {
@@ -64,6 +66,10 @@ header nav {
     margin: 15px 15px 0px 0px;
 }
 
+.profile img {
+    cursor: pointer;
+}
+
 .profile .avatar {
     width: 34px;
     border-radius: 50%;
@@ -84,12 +90,14 @@ main {
 /* section 1 */
 
 .video {
+    width: 92%;
     margin: 5px;
 }
 
-.video iframe {
-    min-width: 430px;
+.video img {
+    width: 90vw;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1);
 }
 
 .video h2 {
@@ -100,6 +108,24 @@ main {
 
 .dio {
     width: 100%;
+}
+
+.dio .channel img, .dio .channel span {
+    cursor: pointer;
+}
+
+.channel-name {
+    margin-left: 10px;
+}
+
+.channel-name span {
+    font-weight: bold;
+}
+
+.channel-name p {
+    margin-top: 3px;
+    font-size: .75rem;
+    color: var(--cinza-claro1);
 }
 
 .dio .channel, .channel-avatar {
@@ -118,6 +144,7 @@ button {
     height: 35px;
     border-radius: 30px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 button img {
@@ -231,5 +258,78 @@ div.buttons {
     margin-bottom: 30px;
     border-radius: 15px;
 
+    font-size: .9rem;
+
     white-space: pre-wrap;
+    cursor: pointer;
+}
+
+.description span {
+    color: var(--cinza-claro1);
+}
+
+.description a {
+    color: #3FA1F5;
+}
+
+/* section 3 */
+
+section.other-videos {
+    width: 92%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.thumbnails img {
+    border-radius: 7px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-size: .9rem;
+}
+
+.labels p {
+    font-size: .75rem;
+    color: var(--cinza-claro1);
+}
+
+.sub-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 175px;
+}
+
+.sub-label p {
+    font-size: .75rem;
+    color: var(--cinza-claro1);
+}
+
+.dot {
+    background: var(--cinza-claro1);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+
+    position: relative;
+    top: 5px;
+}
+
+.cent {
+    width: 160px;
 }
