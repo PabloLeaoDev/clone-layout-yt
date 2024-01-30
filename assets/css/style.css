@@ -4,10 +4,11 @@
     --cinza-escuro: #0F0F0F;
     --cinza-claro: #262628;
     --cinza-claro1: #9b9b9b;
+    --azul-link: #3FA1F5;
 }
 
 header {
-    width: 100%;
+    width: 97.7%;
     height: 65px;
 
     position: fixed;
@@ -269,7 +270,7 @@ div.buttons {
 }
 
 .description a {
-    color: #3FA1F5;
+    color: var(--azul-link);
 }
 
 /* section 3 */
@@ -332,4 +333,23 @@ section.other-videos {
 
 .cent {
     width: 160px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    box-shadow: inset 0px -10px 20px -10px rgba(255, 255, 255, 0.3);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--azul-link);
 }
