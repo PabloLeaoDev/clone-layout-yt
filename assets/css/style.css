@@ -37,21 +37,10 @@ header nav {
 }
 
 .search-bar {
-    /* width: 350px;
-    height: 40px;
-
-    background: black;
-    border: 1px solid var(--cinza-claro);
-    border-radius: 30px;
-
-    overflow: hidden; */
     display: none;
 }
 
 .search {
-    /* width: 24px;
-    height: 24px;
-    border-radius: 50%; */
     display: none;
 }
 
@@ -111,7 +100,7 @@ main {
     width: 100%;
 }
 
-.dio .channel img, .dio .channel span {
+.channel img, .channel span {
     cursor: pointer;
 }
 
@@ -129,7 +118,7 @@ main {
     color: var(--cinza-claro1);
 }
 
-.dio .channel, .channel-avatar {
+.channel, .channel-avatar {
     display: flex;
     flex-direction: row;
 }
@@ -161,13 +150,21 @@ button img {
     color: var(--cinza-claro);
 }
 
-div.buttons {
+.subscribe-1 {
+    display: none;
+}
+
+.buttons {
     display: flex;
 
     gap: 10px;
 
     width: 90%;
     margin: 6px 0px 0px 25px;
+}
+
+.channel-1 {
+    display: none;
 }
 
 .thumbs {
